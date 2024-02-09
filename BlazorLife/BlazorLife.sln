@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorLife", "BlazorLife.csproj", "{BC165DFD-09F3-4B1A-8E85-D3BB591C4643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorLife.Tests", "..\BlazorLife.Tests\BlazorLife.Tests.csproj", "{B7691BBB-1BAF-4803-B711-86074CBA8283}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC165DFD-09F3-4B1A-8E85-D3BB591C4643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC165DFD-09F3-4B1A-8E85-D3BB591C4643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC165DFD-09F3-4B1A-8E85-D3BB591C4643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC165DFD-09F3-4B1A-8E85-D3BB591C4643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7691BBB-1BAF-4803-B711-86074CBA8283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7691BBB-1BAF-4803-B711-86074CBA8283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7691BBB-1BAF-4803-B711-86074CBA8283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7691BBB-1BAF-4803-B711-86074CBA8283}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2115431E-C226-4353-9ECD-5F337CC83E89}
+	EndGlobalSection
+EndGlobal
