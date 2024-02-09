@@ -22,14 +22,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/allis/Source/Repos/blazor-life/BlazorLife/Components/CellGrid.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDZWxsR3JpZC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/allis/Source/Repos/blazor-life/BlazorLife/Components/CellGridView.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDZWxsR3JpZFZpZXcucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/allis/Source/Repos/blazor-life/BlazorLife/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

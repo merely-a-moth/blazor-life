@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TOzc7SkLvynbA8LUW3HJtTpyjNF7XXu93qgnJ99I34M=",
+  "Hash": "HOluU6VojIEWjVsIHBPZu0R69EOv5jphWw+o+I2gLLM=",
   "Source": "BlazorLife",
   "BasePath": "_content/BlazorLife",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "BlazorLife\\wwwroot",
       "Source": "BlazorLife",
-      "ContentRoot": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\wwwroot\\",
       "BasePath": "_content/BlazorLife",
       "Pattern": "**"
     }
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "C:\\Users\\allis\\.nuget\\packages\\blazor.extensions.canvas\\1.1.1\\staticwebassets\\blazor.extensions.canvas.js"
     },
     {
-      "Identity": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorLife.styles.css",
+      "Identity": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorLife.styles.css",
       "SourceId": "BlazorLife",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BlazorLife",
       "RelativePath": "BlazorLife.styles.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorLife.styles.css"
+      "OriginalItemSpec": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorLife.styles.css"
     },
     {
-      "Identity": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorLife.bundle.scp.css",
+      "Identity": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorLife.bundle.scp.css",
       "SourceId": "BlazorLife",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BlazorLife",
       "RelativePath": "BlazorLife.bundle.scp.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorLife.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorLife.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\wwwroot\\app.css",
       "SourceId": "BlazorLife",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\wwwroot\\",
       "BasePath": "_content/BlazorLife",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "BlazorLife",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\wwwroot\\",
       "BasePath": "_content/BlazorLife",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BlazorLife",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\wwwroot\\",
       "BasePath": "_content/BlazorLife",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\wwwroot\\favicon.png",
       "SourceId": "BlazorLife",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allis\\source\\repos\\blazor-life\\BlazorLife\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\allis\\Source\\Repos\\blazor-life\\BlazorLife\\wwwroot\\",
       "BasePath": "_content/BlazorLife",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
