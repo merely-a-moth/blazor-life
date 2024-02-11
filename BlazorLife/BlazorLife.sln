@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorLife", "BlazorLife.csproj", "{BC165DFD-09F3-4B1A-8E85-D3BB591C4643}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorLife.Tests", "..\BlazorLife.Tests\BlazorLife.Tests.csproj", "{B7691BBB-1BAF-4803-B711-86074CBA8283}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorLife.Tests", "..\BlazorLife.Tests\BlazorLife.Tests.csproj", "{B7691BBB-1BAF-4803-B711-86074CBA8283}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

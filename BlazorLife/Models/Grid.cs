@@ -7,6 +7,9 @@ namespace BlazorLife.Models
         int Generation { get; }
         string Name { get; }
 
+        uint Width { get; }
+        uint Height { get; }
+
         public IDictionary<Point, IGridCell> Cells { get; }
 
         IGridCell? CellAt(int x, int y);
@@ -16,6 +19,9 @@ namespace BlazorLife.Models
     {
         public int Generation { get; protected set; }
         public string Name { get; protected set; }
+
+        public uint Width { get; protected set; }
+        public uint Height { get; protected set; }
 
         public IDictionary<Point, IGridCell> Cells { get; protected set; }
 
@@ -27,7 +33,10 @@ namespace BlazorLife.Models
             {
                 cell = new GridCell(x, y);
                 Cells.Add(coordinate, cell);
+
+                UpdateDimensions(coordinate);
             }
+
             return cell;
         }
         public IList<TReturn> ApplyToAll<TReturn>(Func<IGridCell, TReturn> funcToApply)
@@ -40,11 +49,20 @@ namespace BlazorLife.Models
             return results;
         }
 
-        public Grid(string name)
+        public Grid(string name, uint width = 20, uint height = 20)
         {
             Name = name;
             Generation = 0;
             Cells = new Dictionary<Point, IGridCell>();
+
+            Width = width; 
+            Height = height;
+        }
+
+        private void UpdateDimensions(Point coord)
+        {
+            if (coord.Y > Height) { Height = (uint)coord.Y; }
+            if (coord.X > Width) { Width = (uint)coord.X; }
         }
     }
 }

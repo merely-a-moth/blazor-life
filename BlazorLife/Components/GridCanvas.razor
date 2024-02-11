@@ -1,0 +1,46 @@
+﻿@using Blazor.Extensions
+@using Blazor.Extensions.Canvas.Canvas2D
+@using BlazorLife.Models
+
+<BECanvas Width="_canvasWidth" Height="@_canvasHeight" @ref="_canvasReference"></BECanvas>
+
+@code {
+    [Parameter]
+    public uint CellWidth { get; set; } = 10;
+
+    [Parameter]
+    public uint CellHeight { get; set; } = 10;
+
+    [Parameter]
+    public IGrid Grid { get; set; }
+
+    private Canvas2DContext _context;
+    protected BECanvasComponent _canvasReference;
+
+    private uint _canvasWidth { get { return Grid.Width * CellWidth; } }
+    private uint _canvasHeight { get { return Grid.Height * CellHeight; } }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        this._context = await this._canvasReference.CreateCanvas2DAsync();
+        await this._context.BeginBatchAsync();
+        for (int y = 0; y < Grid.Height; y++)
+        {
+            for (int x = 0; x < Grid.Width; x++)
+            {
+                var cell = Grid.CellAt(x, y);
+                if (cell == null) continue;
+                if (cell.IsAlive)
+                {
+                    await this._context.SetFillStyleAsync("black");
+                }
+                else
+                {
+                    await this._context.SetFillStyleAsync("white");
+                }
+                await this._context.FillRectAsync(x * CellWidth, y * CellHeight, CellWidth, CellHeight);
+            }
+        }
+        await this._context.EndBatchAsync();
+    }
+}

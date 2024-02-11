@@ -16,80 +16,34 @@
     </button>
 </div>
 
-<BECanvas Width="@canvasWidth" Height="@canvasHeight" @ref="_canvasReference"></BECanvas>
+<GridCanvas Grid="@grid"></GridCanvas>
 
 @code {
-    private uint cellWidth = 10;
-    private uint cellHeight = 10;
-    private uint lastX = 20;
-    private uint lastY = 20;
-    private uint canvasWidth { get { return lastX * cellWidth; } }
-    private uint canvasHeight { get { return lastY * cellHeight; } }
+    private uint width = 100;
+    private uint height = 100;
 
-    private Canvas2DContext _context;
-    protected BECanvasComponent _canvasReference;
     private IGrid grid;
     private IGridRule gridRule;
     private IGridRunner gridRunner;
 
     protected override void OnInitialized()
     {
-        var rand = new Random(DateTime.Now.Second);
         grid = new Grid("Main");
-
-        for (int y = 0; y < 100; y++)
-        {
-            for (var x = 0; x < 100; x++)
-            {
-                var cell = grid.CellAt(x, y);
-                if (cell == null) continue;
-                if (rand.Next(0, 2) == 1) { cell.Live(); } else { cell.Die(); }
-                if (cell.Coordinate.X > lastX) { lastX = (uint)cell.Coordinate.X; }
-                if (cell.Coordinate.Y > lastY) { lastY = (uint)cell.Coordinate.Y; }
-            }
-        }
-
-        /*grid.CellAt(1, 3).Live();
-        grid.CellAt(2, 1).Live();
-        grid.CellAt(2, 3).Live();
-        grid.CellAt(3, 2).Live();
-        grid.CellAt(3, 3).Live();*/
-
         gridRule = new GridRule();
         gridRunner = new GridRunner(grid, gridRule);
+
+        var gridGenerator = new RandomGridGenerator(width, height);
+        //var gridGenerator = new GliderGridGenerator();
+
+        gridGenerator.Generate(grid);
     }
     protected override async Task OnInitializedAsync()
     {
         await base.OnInitializedAsync();
     }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        this._context = await this._canvasReference.CreateCanvas2DAsync();
-        await this._context.BeginBatchAsync();
-        for (int y = 0; y < 100; y++)
-        {
-            for (int x = 0; x < 100; x++)
-            {
-                IGridCell cell = grid.CellAt(x, y);
-                if (cell == null) continue;
-                if (cell.IsAlive)
-                {
-                    await this._context.SetFillStyleAsync("black");
-                }
-                else
-                {
-                    await this._context.SetFillStyleAsync("white");
-                }
-                await this._context.FillRectAsync(x * cellWidth, y * cellHeight, cellWidth, cellHeight);
-            }
-        }
-        await this._context.EndBatchAsync();
-    }
-
     private void Step()
     {
         gridRunner.Step();
-        StateHasChanged();
     }
 }
